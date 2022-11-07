@@ -11,7 +11,7 @@ const DrumPad = (props) => {
 
 
     return (
-        <button id={props.letter} className={"drum-pad"} onClick={handleClickPlayAudio} >
+        <button id={props.letter.toUpperCase()} className={"drum-pad"} onClick={handleClickPlayAudio} >
             {props.letter.toUpperCase()}
         </button>
     )

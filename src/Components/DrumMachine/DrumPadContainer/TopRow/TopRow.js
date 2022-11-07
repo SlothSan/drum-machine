@@ -1,4 +1,4 @@
-import DrumPad from "./DrumPad/DrumPad";
+import DrumPad from "../DrumPad/DrumPad";
 
 const TopRow = (props) => {
     return (

@@ -15,7 +15,7 @@ function App() {
         if(powerOn === false) {
             console.log("Power Off!")
         } else {
-            document.getElementById(event.key).click();
+            document.getElementById(event.key.toUpperCase()).click();
         }
     }
 
