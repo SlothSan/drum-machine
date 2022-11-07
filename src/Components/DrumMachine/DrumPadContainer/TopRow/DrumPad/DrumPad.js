@@ -3,8 +3,10 @@ const DrumPad = (props) => {
     const handleClickPlayAudio = (event) => {
         event.stopPropagation()
         event.preventDefault()
-        new Audio(props.src).play();
-        props.setDisplayText(props.drumName)
+        if(props.powerOn) {
+            new Audio(props.src).play();
+            props.setDisplayText(props.drumName)
+        }
     }
 
 

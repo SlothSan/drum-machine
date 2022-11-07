@@ -3,15 +3,14 @@ import DrumPadContainer from "./DrumPadContainer/DrumPadContainer";
 import ControlsContainer from "./ControlsContainer/ControlsContainer";
 import {useState} from "react";
 
-const DrumMachine = () => {
+const DrumMachine = (props) => {
 
     const [displayText, setDisplayText] = useState('Snare')
-    const [power, setPower] = useState(true)
 
     return (
         <div id={"drum-machine"} className={"drum-machine"}>
-            <DrumPadContainer setDisplayText={setDisplayText}/>
-            <ControlsContainer displayText={displayText} setPower={setPower}/>
+            <DrumPadContainer setDisplayText={setDisplayText} powerOn={props.powerOn}/>
+            <ControlsContainer displayText={displayText}/>
         </div>
     )
 }

@@ -1,20 +1,27 @@
 import './App.css';
 import DrumMachine from "./Components/DrumMachine/DrumMachine";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 function App() {
+    const [powerOn, setPowerOn] = useState(true)
 
     useEffect(() => {
         document.addEventListener('keydown', onKeyDown, true)
     }, [])
 
     const onKeyDown = (event) => {
-        document.getElementById(event.key).click();
+        event.preventDefault()
+        event.stopPropagation()
+        if(powerOn === false) {
+            console.log("Power Off!")
+        } else {
+            document.getElementById(event.key).click();
+        }
     }
 
     return (
     <div className="App">
-      <DrumMachine onKeyDown={onKeyDown}/>
+      <DrumMachine onKeyDown={onKeyDown} powerOn={powerOn}/>
       <p>Created by Mike Oram</p>
     </div>
   );
