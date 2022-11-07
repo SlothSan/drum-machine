@@ -1,0 +1,14 @@
+.controls-display {
+  width: 150px;
+  padding: 5px;
+  background-color: orange;
+  text-align: center;
+  border-radius: 5px;
+}
+.controls-display .controls-display-text {
+  font-size: 16px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=ControlsDisplay.css.map */

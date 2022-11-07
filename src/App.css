@@ -1,0 +1,23 @@
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  background-color: mintcream;
+}
+.App .app-text {
+  font-size: 2rem;
+  color: darkblue;
+  padding: 5px;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+/*# sourceMappingURL=App.css.map */
