@@ -16,13 +16,19 @@ function App() {
         if(powerOn === false) {
             console.log("Power Off!")
         } else {
-            document.getElementById(event.key).click();
-            document.getElementById(event.key).classList.add("drum-pad-active");
+            try {
+                document.getElementById(event.key).click();
+                document.getElementById(event.key).classList.add("drum-pad-active");
+            } catch {
+                console.log('button not found')
+            }
         }
     }
 
     const onKeyUp = (event) => {
-        document.getElementById(event.key).classList.remove("drum-pad-active");
+        if (document.getElementById(event.key)) {
+            document.getElementById(event.key).classList.remove("drum-pad-active");
+        }
     }
 
     return (

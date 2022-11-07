@@ -1,14 +1,16 @@
 const DrumPad = (props) => {
-
-    const audio = document.getElementById(props.letter.toUpperCase())
+    const newAudio = document.getElementById(props.letter.toUpperCase())
 
     const handleClickPlayAudio = (event) => {
         event.stopPropagation()
         event.preventDefault()
         if(props.powerOn) {
-            new Audio(props.src).play()
-            audio.play()
+            let audio = new Audio(props.src);
+            audio.volume = 1;
+            audio.play();
             props.setDisplayText(props.drumName)
+            newAudio.volume = 0;
+            newAudio.play();
         }
     }
 
