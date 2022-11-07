@@ -8,7 +8,7 @@ const ControlsContainer = (props) => {
         <div className={"controls-container"}>
             <ControlsPower setPowerOn={props.setPowerOn} powerOn={props.powerOn} />
             <ControlsDisplay displayText={props.displayText} />
-            <ControlsVolume />
+            <ControlsVolume volumeLevel={props.volumeLevel} setVolumeLevel={props.setVolumeLevel}/>
         </div>
     )
 }

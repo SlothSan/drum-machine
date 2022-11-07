@@ -6,9 +6,9 @@ import BottomRow from "./BottomRow/BottomRow";
 const DrumPadContainer = (props) => {
     return (
         <div className={"drum-pad-container"}>
-            <TopRow setDisplayText={props.setDisplayText} powerOn={props.powerOn}/>
-            <MiddleRow setDisplayText={props.setDisplayText} powerOn={props.powerOn}/>
-            <BottomRow setDisplayText={props.setDisplayText} powerOn={props.powerOn}/>
+            <TopRow setDisplayText={props.setDisplayText} powerOn={props.powerOn} volumeLevel={props.volumeLevel}/>
+            <MiddleRow setDisplayText={props.setDisplayText} powerOn={props.powerOn} volumeLevel={props.volumeLevel}/>
+            <BottomRow setDisplayText={props.setDisplayText} powerOn={props.powerOn} volumeLevel={props.volumeLevel}/>
         </div>
     )
 }
