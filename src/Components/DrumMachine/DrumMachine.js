@@ -10,7 +10,7 @@ const DrumMachine = () => {
 
     return (
         <div id={"drum-machine"} className={"drum-machine"}>
-            <DrumPadContainer />
+            <DrumPadContainer setDisplayText={setDisplayText}/>
             <ControlsContainer displayText={displayText} setPower={setPower}/>
         </div>
     )

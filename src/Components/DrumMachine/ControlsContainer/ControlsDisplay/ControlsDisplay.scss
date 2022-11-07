@@ -1,0 +1,12 @@
+.controls-display {
+  width: 100px;
+  padding: 5px;
+  background-color: orange;
+  text-align: center;
+  border-radius: 5px;
+  .controls-display-text {
+    font-size: 20px;
+    color: darkblue;
+    font-weight: bold;
+  }
+}
