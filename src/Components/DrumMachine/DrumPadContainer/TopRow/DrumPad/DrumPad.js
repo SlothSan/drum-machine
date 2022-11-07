@@ -1,6 +1,6 @@
 const DrumPad = (props) => {
 
-    const onClickPlayAudio = (event) => {
+    const handleClickPlayAudio = (event) => {
         event.stopPropagation()
         event.preventDefault()
         new Audio(props.src).play();
@@ -9,7 +9,7 @@ const DrumPad = (props) => {
 
 
     return (
-        <button id={props.letter} className={"drum-pad"} onClick={onClickPlayAudio} >
+        <button id={props.letter} className={"drum-pad"} onClick={handleClickPlayAudio} >
             {props.letter.toUpperCase()}
         </button>
     )
