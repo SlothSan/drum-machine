@@ -7,6 +7,7 @@ function App() {
 
     useEffect(() => {
         document.addEventListener('keydown', onKeyDown, true)
+        document.addEventListener('keyup', onKeyUp, true)
     }, [])
 
     const onKeyDown = (event) => {
@@ -15,8 +16,13 @@ function App() {
         if(powerOn === false) {
             console.log("Power Off!")
         } else {
-            document.getElementById(event.key.toUpperCase()).click();
+            document.getElementById(event.key).click();
+            document.getElementById(event.key).classList.add("drum-pad-active");
         }
+    }
+
+    const onKeyUp = (event) => {
+        document.getElementById(event.key).classList.remove("drum-pad-active");
     }
 
     return (
