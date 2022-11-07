@@ -1,8 +1,10 @@
-import './App.scss';
+import './App.css';
+import DrumMachine from "./Components/DrumMachine/DrumMachine";
 
 function App() {
   return (
     <div className="App">
+      <DrumMachine />
     </div>
   );
 }
