@@ -7,7 +7,7 @@ const DrumPad = (props) => {
         event.preventDefault()
         if(props.powerOn) {
             new Audio(props.src).play()
-            audio.play();
+            audio.play()
             props.setDisplayText(props.drumName)
         }
     }

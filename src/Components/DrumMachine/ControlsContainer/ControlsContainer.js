@@ -5,7 +5,7 @@ import ControlsPower from "./ControlsPower/ControlsPower";
 const ControlsContainer = (props) => {
     return (
         <div className={"controls-container"}>
-            <ControlsPower />
+            <ControlsPower setPowerOn={props.setPowerOn} powerOn={props.powerOn} />
             <ControlsDisplay displayText={props.displayText} />
         </div>
     )
