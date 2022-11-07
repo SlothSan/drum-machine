@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Drum Machine
+Created using React for the FreeCodeCamp Front End course.
+
+Uses the gh-pages npm package for deployment : https://www.npmjs.com/package/gh-pages
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
