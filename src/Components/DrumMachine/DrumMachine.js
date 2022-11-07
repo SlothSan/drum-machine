@@ -5,12 +5,12 @@ import {useState} from "react";
 
 const DrumMachine = (props) => {
 
-    const [displayText, setDisplayText] = useState('Snare')
+    const [displayText, setDisplayText] = useState('')
 
     return (
         <div id={"drum-machine"} className={"drum-machine"}>
             <DrumPadContainer setDisplayText={setDisplayText} powerOn={props.powerOn}/>
-            <ControlsContainer displayText={displayText}/>
+            <ControlsContainer displayText={displayText} setPowerOn={props.setPowerOn}/>
         </div>
     )
 }

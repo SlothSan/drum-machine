@@ -27,7 +27,8 @@ function App() {
 
     return (
     <div className="App">
-      <DrumMachine onKeyDown={onKeyDown} powerOn={powerOn}/>
+      <p>Drum Machine</p>
+      <DrumMachine onKeyDown={onKeyDown} powerOn={powerOn} setPowerOn={setPowerOn}/>
       <p>Created by Mike Oram</p>
     </div>
   );
