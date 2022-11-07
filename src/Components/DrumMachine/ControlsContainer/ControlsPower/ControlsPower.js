@@ -3,7 +3,6 @@ import './ControlsPower.css'
 const ControlsPower = (props) => {
 
  const handleChange = () => {
-     console.log("what triggers this?")
      props.setPowerOn(!props.powerOn)
  }
 

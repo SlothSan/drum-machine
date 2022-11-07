@@ -33,9 +33,9 @@ function App() {
 
     return (
     <div className="App">
-      <p>Drum Machine</p>
+      <p className={"app-text"}>Drum Machine</p>
       <DrumMachine onKeyDown={onKeyDown} powerOn={powerOn} setPowerOn={setPowerOn}/>
-      <p>Created by Mike Oram</p>
+      <p className={"app-text"}>Created by Mike Oram</p>
     </div>
   );
 }
